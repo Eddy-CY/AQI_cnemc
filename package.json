@@ -1,0 +1,20 @@
+{
+  "name": "aqi",
+  "version": "1.0.0",
+  "description": "get aqi data from ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "aqi"
+  ],
+  "author": "Eddy",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "errorhandler": "^1.5.1",
+    "express-session": "^1.16.2",
+    "path": "^0.12.7"
+  }
+}
