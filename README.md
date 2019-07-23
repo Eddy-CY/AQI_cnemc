@@ -1,2 +1,7 @@
 # AQI_cnemc
+我们从中国环境总站采集实时的空气质量数据。数据API是http://106.37.208.233:20035/emcpublish/ClientBin/Env-CnemcPublish-RiaServices-EnvCnemcPublishDomainService.svc/binary/GetAQIDataPublishLives。这个API提供了一个WCF二进制数据流，然后使用python-wcfbin 对该二进制文件进行解码得到XML文本格式的数据。
 从环境监测总站获取AQI数据，每隔半个小时获取一次数据并刷新本地缓存对象；创建一个http服务，提供数据接口
+
+#依赖
+本模块依赖于python3，Ppython3调用库解析来自中国环境监测总站接口获取的wcf二进制文件，解析成XML文件并保存成data.xml
+nodej依赖于fast-xml-parse模块把xml文件解析成json，node通过json对象获取需要的数据。
